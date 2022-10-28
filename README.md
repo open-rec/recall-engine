@@ -1,13 +1,13 @@
 # recall-engine
 
 ## redis
-i2i
-hot
-new
+i2i  
+hot  
+new  
 exposure filter
 
 ## elastic search
-full-text search
+full-text search  
 embedding
 
 
