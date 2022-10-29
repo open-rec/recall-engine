@@ -4,7 +4,7 @@
 i2i  
 hot  
 new  
-exposure filter
+filter
 
 ## elastic search
 full-text search  
