@@ -4,9 +4,9 @@ scene
 ### value
 set(scene)
 
-## filter
+## event
 ### key 
-filter:scene:type:{userId} 
+event:scene:type:{userId} 
 ### value
 sorted set(itemId,timestamp) 
 
