@@ -1,18 +1,6 @@
-## scene
-### key
-scene
-### value
-set(scene)
-
-## event
-### key 
-event:scene:type:{userId} 
-### value
-sorted set(itemId,timestamp) 
-
 ## i2i
 ### key
-i2i:scene:{itemId}
+i2i:{itemId}:scene
 ### value
 sorted set(itemId,score)
 
@@ -27,3 +15,27 @@ sorted set(itemId,score)
 new:{scene}
 ### value
 sorted set(itemId,score)
+
+## user
+### key
+user:{userId}
+### value
+User
+
+## item
+### key
+item:{itemId}
+### value
+Item
+
+## event
+### key
+event:{userId}:scene:type
+### value
+sorted set(itemId,timestamp) 
+
+## scene
+### key
+scene
+### value
+set(scene)
