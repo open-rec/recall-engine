@@ -32,7 +32,7 @@ eg:
 
 ```
 
-query vector
+query vector  
 eg:
 ```json
 {
