@@ -32,7 +32,21 @@ eg:
 
 ```
 
-query  
+query vector
+eg:
+```json
+{
+  "query": {
+    "match": {
+      "itemId": {
+        "query": "item_999999"
+      }
+    }
+  }
+}
+```
+
+recall similar items  
 eg:  
 ```json
 {
