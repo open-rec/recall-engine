@@ -32,7 +32,7 @@ eg:
 
 ```
 
-query vector  
+query single vector  
 eg:
 ```json
 {
@@ -46,16 +46,47 @@ eg:
 }
 ```
 
-recall similar items  
+query multi vectors  
 eg:  
+```json
+{
+  "query": {
+    "constant_score": {
+      "filter": {
+          "terms": {
+            "itemId": ["item_999999","item_999998"]
+          }
+      }
+    }
+  }
+}
+```
+
+recall similar items  
+eg:
+
 ```json
 {
   "knn": {
     "field": "itemId-vector",
-    "query_vector": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
+    "query_vector": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
     "k": 10,
     "num_candidates": 20
   },
-  "fields": [ "itemId"]
+  "fields": [
+    "itemId"
+  ],
+  "size": 2
 }
 ```
