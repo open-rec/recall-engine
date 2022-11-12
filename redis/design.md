@@ -32,13 +32,7 @@ Item
 ### key
 event:{userId}:scene:type
 ### value
-sorted set(itemId,timestamp) 
-
-## scene
-### key
-scene
-### value
-set(scene)
+sorted set(itemId,timestamp)
 
 ## black
 ### key
