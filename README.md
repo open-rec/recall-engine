@@ -4,7 +4,7 @@
 i2i  
 hot  
 new  
-filter
+filter  
 blacklist
 
 more details: [redis index](https://github.com/open-rec/recall-engine/blob/main/es/design.md)
